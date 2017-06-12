@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorAccent"
+    android:padding="@dimen/padding"
+    android:onClick="game"
+    tools:context="com.gopromoto.siddharth.catch_phrase.com.gopromoto.siddharth.act_phrase.GameScreen">
+
+
+
+    <TextView
+        android:padding="@dimen/padding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="Tap Anywhere on The Screen to Start or Change The Word"
+        android:id="@+id/wordText"
+        android:textSize="@dimen/headingtext"
+        android:textColor="@android:color/white"/>
+
+    <ProgressBar
+        android:layout_below="@+id/wordText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminateOnly="true"
+        android:visibility="gone"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/pb"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:text="Game Over"
+        android:visibility="gone"
+        android:id="@+id/GameOverBtn"
+        android:textSize="@dimen/headingtext"
+        android:textColor="@android:color/white"
+        android:padding="@dimen/padding"/>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.inmobi.ads"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding"
+    tools:context="com.gopromoto.siddharth.act_phrase.GameMenu"
+    android:background="@color/colorAccent">
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:background="@drawable/button_bg"
+        android:textSize="@dimen/headingtext"
+        android:padding="@dimen/padding"
+        android:textColor="@android:color/white"/>
+
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_bg"
+        android:id="@+id/playbtn"
+        android:text="PLAY"
+        android:textAllCaps="true"
+        android:textSize="@dimen/textsize"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:textSize="@dimen/textsize"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/howtoplaybtn"
+        android:background="@drawable/button_bg"
+        android:text="How To Play"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"/>
+
+
+    <Button
+        android:textSize="@dimen/textsize"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rateusbtn"
+        android:background="@drawable/button_bg"
+        android:text="Rate Us"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"/>
+
+
+    <com.inmobi.ads.InMobiBanner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:placementId="1495832786139"
+        android:layout_marginTop="20dp"
+        />
+
+</LinearLayout>

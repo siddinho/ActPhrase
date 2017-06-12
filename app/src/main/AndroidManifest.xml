@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.gopromoto.siddharth.act_phrase">
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/catchphraseicon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/catchphraseicon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name="com.gopromoto.siddharth.act_phrase.SplashScreen"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.gopromoto.siddharth.act_phrase.GameMenu" />
+        <activity android:name="com.gopromoto.siddharth.act_phrase.HowtoUse" />
+        <activity android:name="com.gopromoto.siddharth.act_phrase.GameScreen"></activity>
+
+
+
+        <!--Required Activity for rendering ads in the embedded browser-->
+        <activity android:name="com.inmobi.rendering.InMobiAdActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard|smallestScreenSize|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:hardwareAccelerated="true" />
+
+
+        <!--Required Receiver for enhanced targeting for better ads.-->
+
+        <receiver android:name="com.inmobi.commons.core.utilities.uid.ImIdShareBroadCastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="com.inmobi.share.id" />
+            </intent-filter>
+        </receiver>
+
+        <service android:enabled="true" android:name="com.inmobi.signals.activityrecognition.ActivityRecognitionManager" />
+
+        <!--Required for Google Play Services-->
+
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+    </application>
+
+</manifest>

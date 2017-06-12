@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Act-Phrase</string>
+    <string name="action_settings">Settings</string>
+    <string name="howtousetext">Act-Phrase is a simple game that you can play at any get-together.\n
+         1.)Make Everyone sit in a circle in which each alternate member is in the same team.\n2.)Start the game a word appears on the screen
+    You have to enact it and help your teammate guess the word without directly \n-Saying The Word \n-Saying any Rhyming Word\n 3.)On Successful guess, Tap the Screen, Word changes and pass the device to other team when the time expires
+        there will be a  beep stop and the team holding the device gets eliminated and is given a dare to perform.\n
+   4.) See The  Above Video to understand better.  Hope You Enjoy It.
+
+    </string>
+</resources>
